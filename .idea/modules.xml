@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SAGA_Orchestrator.iml" filepath="$PROJECT_DIR$/SAGA_Orchestrator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caching-service/caching-service.iml" filepath="$PROJECT_DIR$/caching-service/caching-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/negeative-service/negeative-service.iml" filepath="$PROJECT_DIR$/negeative-service/negeative-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orchestrator-service/orchestrator-service.iml" filepath="$PROJECT_DIR$/orchestrator-service/orchestrator-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/positive-service/positive-service.iml" filepath="$PROJECT_DIR$/positive-service/positive-service.iml" />
+    </modules>
+  </component>
+</project>
