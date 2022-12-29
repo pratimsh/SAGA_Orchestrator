@@ -13,11 +13,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="caching-service" target="8" />
-      <module name="negeative-service" target="8" />
-      <module name="orchestrator-service" target="8" />
-      <module name="positive-service" target="8" />
-      <module name="SAGA_Orchestrator" target="8" />
+      <module name="caching-service" target="1.8" />
+      <module name="negeative-service" target="1.8" />
+      <module name="orchestrator-service" target="1.8" />
+      <module name="positive-service" target="1.8" />
+      <module name="SAGA_Orchestrator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
