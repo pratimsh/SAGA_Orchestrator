@@ -88,12 +88,12 @@ public class OrchestratorController {
 
         //retrieving data from cache
         Integer key = null , value = null;
-        if(getResponse.getBody().get("key") instanceof Integer) {
+       // if(getResponse.getBody().get("key") instanceof Integer) {
              key = (Integer) getResponse.getBody().get("key");
-        }
-        if(getResponse.getBody().get("value") instanceof Integer){
+        //}
+      //  if(getResponse.getBody().get("value") instanceof Integer){
              value = (Integer) getResponse.getBody().get("value");
-        }
+       // }
 
 
         Integer product = key * value;

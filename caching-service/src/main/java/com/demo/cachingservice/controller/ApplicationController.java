@@ -2,7 +2,10 @@ package com.demo.cachingservice.controller;
 
 
 import com.demo.cachingservice.service.CacheService;
+import com.github.benmanes.caffeine.cache.Cache;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.caffeine.CaffeineCache;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -39,5 +42,13 @@ public class ApplicationController {
     public String deleteValueFromCache(@PathVariable Integer key){
         cacheService.deleteValueFromCache(key);
         return "cache cleared";
+    }
+
+
+
+    @GetMapping(value = "/inspectCache")
+    public void inspectCache(String cacheName) {
+
+        cacheService.inspectCache(cacheName);
     }
 }
