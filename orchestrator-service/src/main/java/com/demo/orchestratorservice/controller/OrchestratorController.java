@@ -1,5 +1,8 @@
 package com.demo.orchestratorservice.controller;
 
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
@@ -14,6 +17,7 @@ import java.util.Map;
 
 @RestController
 public class OrchestratorController {
+    Logger logger = (Logger) LogManager.getLogger(OrchestratorController.class);
     @Autowired
     private Environment env ;
     public static Map<String,Integer> custom_map = new HashMap<>();
@@ -29,6 +33,7 @@ public class OrchestratorController {
         try {
              response = restTemplate.getForEntity(pos_service_url, Integer.class);
         }catch(ResourceAccessException e){
+            logger.info("Positive service is not so positive today, come back later");
             return ResponseEntity.ok("Positive service is not so positive today, come back later");
         }
         if (HttpStatus.OK != response.getStatusCode()) {
